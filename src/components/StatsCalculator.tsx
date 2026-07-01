@@ -360,11 +360,11 @@ export default function StatsCalculator() {
               </div>
 
               {/* Navigation buttons */}
-              <div className="pt-4 flex justify-between items-center">
+              <div className="pt-4 flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="text-brand-dark hover:text-brand-orange font-semibold text-sm transition flex items-center gap-2"
+                  className="w-full sm:w-auto text-brand-dark hover:text-brand-orange font-semibold text-sm transition flex items-center justify-center sm:justify-start gap-2 py-2"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   Vorige stap
@@ -373,10 +373,9 @@ export default function StatsCalculator() {
                 <button
                   type="button"
                   onClick={calculateHorizon}
-                  className="bg-brand-orange hover:bg-brand-orange-hover text-white px-8 py-3.5 rounded-xl font-bold text-sm transition flex items-center gap-2 cursor-pointer shadow-md hover:shadow-lg"
+                  className="w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white px-8 py-3.5 rounded-xl font-bold transition flex items-center justify-center cursor-pointer shadow-md hover:shadow-lg"
                 >
                   Bereken mijn Horizon!
-                  <span className="w-1.5 h-1.5 rounded-full bg-current" />
                 </button>
               </div>
             </motion.div>
