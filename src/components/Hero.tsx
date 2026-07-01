@@ -38,7 +38,7 @@ const TypewriterHeadline = () => {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-12 sm:pt-24 lg:pt-36 pb-16 lg:pb-32 bg-white">
+    <section className="relative overflow-hidden pt-4 sm:pt-24 lg:pt-36 pb-16 lg:pb-32 bg-white">
       {/* Panoramic Horizon Footer inside Hero */}
       <div 
         className="absolute -bottom-16 md:-bottom-24 left-0 w-full h-[250px] sm:h-[350px] lg:h-[450px] z-0 pointer-events-none"
