@@ -57,7 +57,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Text Column */}
-          <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">
             {/* Tag/Badge */}
             <motion.div 
               className="inline-flex items-center gap-1.5 bg-brand-peach border border-brand-orange/15 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-brand-orange uppercase tracking-wider"
@@ -128,7 +128,7 @@ export default function Hero() {
 
           {/* Right Mascot Illustration Column */}
           <motion.div 
-            className="lg:col-span-5"
+            className="lg:col-span-5 relative order-1 lg:order-2"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
