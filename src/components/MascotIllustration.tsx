@@ -25,12 +25,7 @@ export default function MascotIllustration() {
         transition={{ duration: 1.2, type: "spring" }}
         whileHover={{ scale: 1.08, rotate: 1 }}
         whileTap={{ scale: 0.95, rotate: -3 }}
-        onClick={() => {
-          // Use MP3 format instead of OGG for iOS Safari compatibility
-          const audio = new Audio("https://orangefreesounds.com/wp-content/uploads/2014/10/Elephant-trumpet-sound.mp3");
-          audio.volume = 0.5;
-          audio.play().catch(e => console.log("Audio play failed:", e));
-        }}
+        // Removed audio on click as requested, keeping just the tap animation
       >
         <img 
           src="/IMG/olifant-bril.png" 
