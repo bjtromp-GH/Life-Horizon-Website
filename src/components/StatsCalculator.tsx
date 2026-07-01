@@ -130,7 +130,8 @@ export default function StatsCalculator() {
             >
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-brand-dark tracking-tight">
-                  Vul je basisprofiel & levensstijl in
+                  <span className="sm:hidden">Basisprofiel & Levensstijl</span>
+                  <span className="hidden sm:inline">Vul je basisprofiel & levensstijl in</span>
                 </h3>
                 <p className="text-sm text-[#767676] mt-1">
                   Je profiel en gewoonten bepalen de basis van jouw levensverwachting.
