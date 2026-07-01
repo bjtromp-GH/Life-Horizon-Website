@@ -25,14 +25,11 @@ export default function Philosophy() {
                 </blockquote>
                 <div className="h-px bg-white/20 w-16" />
                 <cite className="block text-xs font-mono uppercase tracking-widest text-brand-peach font-bold not-italic">
-                  — Lucius Annaeus Seneca
+                  — Seneca
                 </cite>
               </div>
 
-              {/* Little decorative year */}
-              <div className="absolute bottom-4 right-6 font-mono text-[9px] text-white/30 tracking-wider">
-                DE BREVITATE VITAE
-              </div>
+              {/* Little decorative element removed as requested */}
             </motion.div>
 
             {/* Seneca quote 2 with Wise Elephant Thumbs-up image */}
