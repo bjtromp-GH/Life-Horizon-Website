@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion, useScroll, useSpring } from 'motion/react';
 import { Compass, Heart } from 'lucide-react';
 import Hero from './components/Hero';
 import StatsCalculator from './components/StatsCalculator';
@@ -9,10 +9,22 @@ import Footer from './components/Footer';
 import TrustBadges from './components/TrustBadges';
 
 export default function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
     <div className="min-h-screen bg-[#FAFAFA] font-sans antialiased text-[#2D2D2D]">
       {/* Sticky Translucent Header */}
       <header className="sticky top-0 z-50 bg-brand-orange/95 backdrop-blur-md border-b border-white/10 text-white">
+        {/* Mobile scroll progress bar (under the orange bar) */}
+        <motion.div
+          className="absolute bottom-0 left-0 right-0 h-[3px] bg-white sm:hidden origin-left"
+          style={{ scaleX }}
+        />
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo Brand */}
           <div className="flex items-center gap-2">
