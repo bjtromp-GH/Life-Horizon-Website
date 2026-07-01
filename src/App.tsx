@@ -48,7 +48,7 @@ export default function App() {
       </header>
 
       {/* Top App Download Banner */}
-      <div className="bg-[#1C1C1C] text-white px-4 py-2.5 text-center flex flex-col sm:flex-row items-center justify-center gap-3 relative z-40 shadow-sm border-b border-black/20">
+      <div className="bg-[#1C1C1C] text-white px-4 py-4 sm:py-3 text-center flex flex-col sm:flex-row items-center justify-center gap-3 relative z-40 shadow-sm border-b border-black/20">
         <span className="text-xs sm:text-sm font-medium text-gray-200">
           Life Horizon is nu beschikbaar voor Android!
         </span>
