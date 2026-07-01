@@ -274,7 +274,7 @@ export default function StatsCalculator() {
                         }`}
                       >
                         <Activity className="w-4 h-4 flex-shrink-0" />
-                        <span className="leading-tight whitespace-pre-line">{a === 'laag' ? 'Zittend\\n(laag)' : a === 'gemiddeld' ? 'Actief\\n(gemiddeld)' : 'Sportief\\n(hoog)'}</span>
+                        <span className="leading-tight">{a === 'laag' ? <>Zittend<br/>(laag)</> : a === 'gemiddeld' ? <>Actief<br/>(gemiddeld)</> : <>Sportief<br/>(hoog)</>}</span>
                       </button>
                     ))}
                   </div>
@@ -282,14 +282,14 @@ export default function StatsCalculator() {
               </div>
 
               {/* Navigation button */}
-              <div className="pt-4 flex justify-end">
+              <div className="pt-4 flex sm:justify-end">
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 cursor-pointer shadow-md hover:shadow-lg"
+                  className="w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3 rounded-xl font-bold transition flex items-center justify-center gap-2"
                 >
                   Volgende stap
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
             </motion.div>
