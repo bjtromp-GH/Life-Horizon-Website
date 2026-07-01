@@ -151,7 +151,7 @@ export default function StatsCalculator() {
                       max="110" 
                       value={inputs.age}
                       onChange={(e) => setInputs({...inputs, age: e.target.value === '' ? '' : parseInt(e.target.value)})}
-                      className="w-full bg-[#FAFAFA] border border-[#EAEAEA] rounded-xl px-4 py-3 text-lg font-mono text-brand-dark focus:outline-none focus:border-brand-orange transition"
+                      className="w-full bg-[#FAFAFA] border border-[#EAEAEA] rounded-xl px-4 py-3 text-xl sm:text-2xl font-bold font-mono text-brand-dark focus:outline-none focus:border-brand-orange transition"
                     />
                     <span className="absolute right-4 font-mono text-xs text-[#767676]">jaar</span>
                   </div>
@@ -329,7 +329,7 @@ export default function StatsCalculator() {
                       value={inputs.careerStartAge}
                       onChange={(e) => setInputs({...inputs, careerStartAge: e.target.value === '' ? '' : parseInt(e.target.value)})}
                       placeholder="Bijv. 22"
-                      className="w-full bg-[#FAFAFA] border border-[#EAEAEA] rounded-xl px-4 py-3 text-lg font-mono text-brand-dark focus:outline-none focus:border-brand-orange transition"
+                      className="w-full bg-[#FAFAFA] border border-[#EAEAEA] rounded-xl px-4 py-3 text-xl sm:text-2xl font-bold font-mono text-brand-dark focus:outline-none focus:border-brand-orange transition"
                     />
                     <span className="absolute right-4 font-mono text-xs text-[#767676]">jaar</span>
                   </div>
@@ -345,7 +345,7 @@ export default function StatsCalculator() {
                       type="text" 
                       readOnly
                       value={`${(typeof inputs.age === 'number' ? inputs.age : 28) >= 60 ? 67 : (typeof inputs.age === 'number' ? inputs.age : 28) >= 40 ? 68 : 69} (Auto)`}
-                      className="w-full bg-[#F5F5F5] border border-[#EAEAEA] rounded-xl px-4 py-3 text-lg font-mono text-brand-orange font-bold cursor-not-allowed"
+                      className="w-full bg-[#F5F5F5] border border-[#EAEAEA] rounded-xl px-4 py-3 text-xl sm:text-2xl font-bold font-mono text-brand-orange cursor-not-allowed"
                     />
                     <span className="absolute right-4 font-mono text-xs text-[#767676]">jaar</span>
                   </div>
