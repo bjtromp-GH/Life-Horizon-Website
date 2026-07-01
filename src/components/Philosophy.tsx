@@ -117,7 +117,7 @@ export default function Philosophy() {
       />
 
       {/* Mascot overlaid on horizon */}
-      <div className="absolute bottom-0 right-8 sm:right-16 lg:right-32 z-10 w-28 sm:w-40 lg:w-56 pointer-events-none origin-bottom translate-y-2">
+      <div className="absolute bottom-0 right-20 sm:right-32 lg:right-48 z-10 w-40 sm:w-48 lg:w-64 pointer-events-none origin-bottom translate-y-2">
         <img 
           src="/IMG/LR_Olifant_v2.png" 
           alt="Wijze Olifant" 
