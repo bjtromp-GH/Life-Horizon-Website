@@ -316,9 +316,10 @@ export default function StatsCalculator() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 {/* Career Start Age */}
                 <div className="space-y-2">
-                  <label className="block text-xs font-semibold text-brand-dark uppercase tracking-wider">
+                  <label className="block text-xs font-semibold text-brand-dark uppercase tracking-wider mb-1">
                     Startleeftijd carrière
                   </label>
+                  <p className="text-xs text-[#767676] leading-snug">Wanneer ben je begonnen met werken?</p>
                   <div className="relative flex items-center">
                     <input 
                       type="number" 
