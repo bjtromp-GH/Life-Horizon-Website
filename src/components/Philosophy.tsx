@@ -115,6 +115,15 @@ export default function Philosophy() {
           maskImage: "linear-gradient(to bottom, transparent 0%, black 60%)"
         }} 
       />
+
+      {/* Mascot overlaid on horizon */}
+      <div className="absolute bottom-0 right-8 sm:right-16 lg:right-32 z-10 w-28 sm:w-40 lg:w-56 pointer-events-none origin-bottom translate-y-2">
+        <img 
+          src="/IMG/LR_Olifant_v2.png" 
+          alt="Wijze Olifant" 
+          className="w-full h-auto drop-shadow-2xl"
+        />
+      </div>
     </section>
   );
 }
