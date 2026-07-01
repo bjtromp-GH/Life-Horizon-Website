@@ -38,7 +38,7 @@ const TypewriterHeadline = () => {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-32 bg-white">
+    <section className="relative overflow-hidden pt-12 sm:pt-24 lg:pt-36 pb-16 lg:pb-32 bg-white">
       {/* Panoramic Horizon Footer inside Hero */}
       <div 
         className="absolute -bottom-16 md:-bottom-24 left-0 w-full h-[250px] sm:h-[350px] lg:h-[450px] z-0 pointer-events-none"
@@ -54,7 +54,7 @@ export default function Hero() {
       {/* Decorative orbital grids removed to keep the horizon clean */}
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-10 lg:gap-8 items-center">
           
           {/* Left Text Column */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">

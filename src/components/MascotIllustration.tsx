@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export default function MascotIllustration() {
   return (
-    <div className="relative w-full max-w-sm mx-auto aspect-square flex items-center justify-center p-4">
+    <div className="relative w-full max-w-sm mx-auto flex items-center justify-center py-4 lg:py-8">
       {/* Background ambient glow matching the warm sunset theme of the savanna */}
       <motion.div 
         className="absolute inset-0 bg-radial from-[#D56B45]/20 via-[#FAF3F0]/10 to-transparent rounded-full opacity-60 blur-3xl pointer-events-none"
