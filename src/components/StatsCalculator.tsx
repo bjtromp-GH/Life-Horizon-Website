@@ -98,6 +98,15 @@ export default function StatsCalculator() {
   const handleReset = () => {
     setStep(1);
     setResults(null);
+    
+    // Scroll smoothly to the top of the calculator on mobile
+    setTimeout(() => {
+      const element = document.getElementById("calculator-section");
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 50); // slight delay for React to render step 1
   };
 
   return (
