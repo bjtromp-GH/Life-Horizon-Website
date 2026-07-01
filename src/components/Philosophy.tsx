@@ -3,8 +3,8 @@ import { Quote, AlertCircle, CheckCircle2 } from 'lucide-react';
 
 export default function Philosophy() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative overflow-hidden pt-24 pb-48 lg:pb-64 bg-white">
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left: Beautiful Seneca Quote Card */}
@@ -106,6 +106,18 @@ export default function Philosophy() {
 
         </div>
       </div>
+
+      {/* Panoramic Horizon Footer before the dark footer */}
+      <div 
+        className="absolute bottom-0 left-0 w-full h-[250px] sm:h-[350px] lg:h-[450px] z-0 pointer-events-none"
+        style={{ 
+          backgroundImage: "url('/IMG/horizon-balk.webp')", 
+          backgroundSize: "cover", 
+          backgroundPosition: "bottom right",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 60%)",
+          maskImage: "linear-gradient(to bottom, transparent 0%, black 60%)"
+        }} 
+      />
     </section>
   );
 }
