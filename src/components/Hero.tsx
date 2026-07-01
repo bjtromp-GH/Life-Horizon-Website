@@ -45,7 +45,7 @@ export default function Hero() {
         style={{ 
           backgroundImage: "url('/IMG/horizon-balk.webp')", 
           backgroundSize: "cover", 
-          backgroundPosition: "bottom 70%",
+          backgroundPosition: "bottom right",
           WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 60%)",
           maskImage: "linear-gradient(to bottom, transparent 0%, black 60%)"
         }} 
