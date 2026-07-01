@@ -43,7 +43,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex bg-white hover:bg-gray-100 text-brand-dark text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl transition shadow-md hover:shadow-xl cursor-pointer"
             >
-              Download in Playstore
+              Download de app in de Playstore
             </a>
           </div>
 

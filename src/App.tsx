@@ -58,7 +58,7 @@ export default function App() {
           rel="noopener noreferrer"
           className="bg-brand-orange hover:bg-brand-orange-hover text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full transition shadow-xs whitespace-nowrap"
         >
-          Download in Playstore
+          DOWNLOAD DE APP IN DE PLAYSTORE
         </a>
       </div>
 
