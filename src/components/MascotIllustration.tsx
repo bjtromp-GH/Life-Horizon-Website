@@ -19,7 +19,7 @@ export default function MascotIllustration() {
 
       {/* The main picture itself (just the png transparent mascot) */}
       <motion.div 
-        className="relative z-10 w-64 h-64 flex items-center justify-center"
+        className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 flex items-center justify-center"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, type: "spring" }}
