@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 import { 
   Heart, 
   Dna, 
@@ -10,6 +10,8 @@ import {
 } from 'lucide-react';
 
 export default function Features() {
+  const shouldReduceMotion = useReducedMotion();
+
   const list = [
     {
       icon: <Eye className="w-6 h-6 text-brand-orange" />,
@@ -37,20 +39,6 @@ export default function Features() {
     }
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } }
-  };
 
   return (
     <section className="py-24 bg-gradient-to-br from-[#E25C26] via-[#D56B45] to-[#B84E29] text-white relative overflow-hidden">
@@ -80,18 +68,19 @@ export default function Features() {
         </div>
 
         {/* Features Bento Grid */}
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {list.map((item, idx) => (
             <motion.div 
               key={idx}
-              variants={itemVariants}
-              whileHover={{ scale: 1.015, y: -4 }}
+              initial={shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{
+                duration: 0.6,
+                delay: shouldReduceMotion ? 0 : idx * 0.15,
+                ease: "easeOut"
+              }}
+              whileHover={shouldReduceMotion ? {} : { scale: 1.015, y: -4 }}
               className="bg-white p-8 rounded-3xl border border-white/10 shadow-lg hover:shadow-2xl transition-all flex flex-col justify-between group relative overflow-hidden text-brand-dark"
             >
               {/* Subtle hover gradient decoration */}
@@ -120,7 +109,7 @@ export default function Features() {
               <div className="w-12 h-1 bg-brand-orange/20 rounded-full mt-6 group-hover:w-24 group-hover:bg-brand-orange transition-all duration-300" />
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
