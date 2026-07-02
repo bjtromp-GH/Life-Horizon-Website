@@ -3,7 +3,7 @@ import { Quote, AlertCircle, CheckCircle2 } from 'lucide-react';
 
 export default function Philosophy() {
   return (
-    <section className="relative overflow-hidden pt-24 pb-48 lg:pb-64 bg-white">
+    <section className="relative overflow-hidden pt-24 pb-56 sm:pb-72 lg:pb-64 bg-white">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
@@ -117,7 +117,7 @@ export default function Philosophy() {
       />
 
       {/* Mascot overlaid on horizon */}
-      <div className="absolute bottom-0 right-20 sm:right-32 lg:right-48 z-10 w-40 sm:w-48 lg:w-64 pointer-events-none origin-bottom translate-y-2">
+      <div className="absolute bottom-0 right-4 sm:right-8 md:right-16 lg:right-32 xl:right-48 z-10 w-40 sm:w-48 lg:w-64 pointer-events-none origin-bottom translate-y-2">
         <img 
           src="/IMG/LR_Olifant_v2.png" 
           alt="Wijze Olifant" 
