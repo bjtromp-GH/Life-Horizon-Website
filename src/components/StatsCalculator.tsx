@@ -346,9 +346,10 @@ export default function StatsCalculator() {
 
                 {/* Auto AOW Age */}
                 <div className="space-y-2">
-                  <label className="block text-xs font-semibold text-brand-dark uppercase tracking-wider">
+                  <label className="block text-xs font-semibold text-brand-dark uppercase tracking-wider mb-1">
                     Verwachte AOW-leeftijd
                   </label>
+                  <p className="text-xs text-[#767676] leading-snug">Wanneer verwacht je met pensioen te gaan?</p>
                   <div className="relative flex items-center">
                     <input 
                       type="text" 
