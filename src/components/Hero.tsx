@@ -38,7 +38,7 @@ const TypewriterHeadline = () => {
 
 export default function Hero() {
   const isMobile = typeof window !== 'undefined' ? window.innerWidth < 1024 : false;
-  const mascotDelay = isMobile ? 1.85 : 0.2;
+  const mascotDelay = isMobile ? 1.0 : 0.2;
 
   return (
     <section className="relative overflow-hidden pt-4 sm:pt-24 lg:pt-36 pb-16 lg:pb-32 bg-white">
