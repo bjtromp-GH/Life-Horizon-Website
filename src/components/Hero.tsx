@@ -37,6 +37,9 @@ const TypewriterHeadline = () => {
 };
 
 export default function Hero() {
+  const isMobile = typeof window !== 'undefined' ? window.innerWidth < 1024 : false;
+  const mascotDelay = isMobile ? 1.85 : 0.2;
+
   return (
     <section className="relative overflow-hidden pt-4 sm:pt-24 lg:pt-36 pb-16 lg:pb-32 bg-white">
       {/* Panoramic Horizon Footer inside Hero */}
@@ -131,9 +134,9 @@ export default function Hero() {
             className="lg:col-span-5 relative order-1 lg:order-2"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 1, delay: mascotDelay }}
           >
-            <MascotIllustration />
+            <MascotIllustration delay={mascotDelay} />
           </motion.div>
 
         </div>

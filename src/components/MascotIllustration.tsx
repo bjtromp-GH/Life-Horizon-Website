@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-export default function MascotIllustration() {
+export default function MascotIllustration({ delay = 0 }: { delay?: number }) {
   return (
     <div className="relative w-full max-w-sm mx-auto flex items-center justify-center py-4 lg:py-8">
       {/* Background ambient glow matching the warm sunset theme of the savanna */}
@@ -22,7 +22,7 @@ export default function MascotIllustration() {
         className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 flex items-center justify-center cursor-pointer"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.2, type: "spring" }}
+        transition={{ duration: 1.2, type: "spring", delay }}
         whileHover={{ scale: 1.08, rotate: 1 }}
         whileTap={{ scale: 0.95, rotate: -3 }}
         // Removed audio on click as requested, keeping just the tap animation
