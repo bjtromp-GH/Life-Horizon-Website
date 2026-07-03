@@ -596,6 +596,10 @@ export default function StatsCalculator() {
 
                 <a
                   href="#cta-section"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('cta-header')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }}
                   className="w-full sm:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white text-xs font-bold uppercase tracking-wider px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-sm"
                 >
                   Download de Volledige App

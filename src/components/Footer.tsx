@@ -22,7 +22,7 @@ export default function Footer() {
             Neem Regie Over Je Leven
           </motion.div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+          <h2 id="cta-header" className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
             Tijd is je meest<br />waardevolle bezit.
           </h2>
 
