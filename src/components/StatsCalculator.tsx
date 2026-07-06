@@ -17,6 +17,7 @@ import {
   Heart
 } from 'lucide-react';
 import { UserProfileInputs, CalculationResults } from '../types';
+import LifeMatrix from './LifeMatrix';
 
 export default function StatsCalculator() {
   const [step, setStep] = useState<1 | 2 | 3>(1);
@@ -508,6 +509,14 @@ export default function StatsCalculator() {
                   <span>Einde (~{results.lifeExpectancy})</span>
                 </div>
               </div>
+
+              {/* Life Matrix Visualizer */}
+              <LifeMatrix 
+                age={typeof inputs.age === 'number' ? inputs.age : 0} 
+                youthYears={results.youthYears} 
+                aowAge={results.aowAge} 
+                lifeExpectancy={results.lifeExpectancy} 
+              />
 
               {/* Dynamic Phases Model explained */}
               <div className="space-y-4">
