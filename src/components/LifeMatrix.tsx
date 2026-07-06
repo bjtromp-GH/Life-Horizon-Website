@@ -15,14 +15,14 @@ export default function LifeMatrix({ age, youthYears, aowAge, lifeExpectancy }: 
   const decades = totalYears / 10;
 
   return (
-    <div className="bg-[#FAF9F8] rounded-3xl p-6 sm:p-8 border border-[#EAEAEA] overflow-hidden">
-      <div className="mb-6">
-        <h3 className="text-sm font-bold text-gray-500 tracking-[0.2em] uppercase mb-4">
+    <div className="bg-[#FAF9F8] rounded-3xl p-4 sm:p-6 md:p-8 border border-[#EAEAEA] overflow-hidden w-full">
+      <div className="mb-4 sm:mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <h3 className="text-xs sm:text-sm font-bold text-gray-500 tracking-[0.2em] uppercase">
           Levensmatrix
         </h3>
         
         {/* Legend */}
-        <div className="flex flex-wrap gap-4 sm:gap-6 text-sm font-mono text-gray-600">
+        <div className="flex flex-wrap gap-3 sm:gap-6 text-[10px] sm:text-xs md:text-sm font-mono text-gray-600">
           <div className="flex items-center gap-2">
             <div className="w-3.5 h-3.5 rounded bg-brand-dark opacity-90" />
             <span>Ontwikkeling</span>
@@ -38,17 +38,17 @@ export default function LifeMatrix({ age, youthYears, aowAge, lifeExpectancy }: 
         </div>
       </div>
 
-      <div className="relative overflow-x-auto pb-4">
-        <div className="min-w-[600px] flex flex-col gap-2.5">
+      <div className="relative pb-2 flex justify-center">
+        <div className="flex flex-col gap-1 sm:gap-1.5 md:gap-2.5 w-full max-w-fit mx-auto">
           {Array.from({ length: decades }).map((_, decadeIndex) => (
-            <div key={decadeIndex} className="flex items-center gap-3">
+            <div key={decadeIndex} className="flex items-center gap-1.5 sm:gap-2 md:gap-3">
               {/* Row Label */}
-              <div className="w-12 text-right font-mono text-gray-500 text-sm">
-                {decadeIndex * 10} jr
+              <div className="w-6 sm:w-10 md:w-12 text-right font-mono text-gray-400 sm:text-gray-500 text-[9px] sm:text-[11px] md:text-sm -mr-0.5 sm:mr-0">
+                {decadeIndex * 10}<span className="hidden sm:inline"> jr</span>
               </div>
               
               {/* Year Blocks */}
-              <div className="flex gap-2.5 flex-1">
+              <div className="flex gap-1 sm:gap-1.5 md:gap-2.5 flex-1 justify-between sm:justify-start">
                 {Array.from({ length: 10 }).map((_, yearIndex) => {
                   const year = decadeIndex * 10 + yearIndex;
                   
@@ -64,7 +64,7 @@ export default function LifeMatrix({ age, youthYears, aowAge, lifeExpectancy }: 
                   const isBeyond = year > lifeExpectancy;
 
                   // Styling
-                  let blockClass = "w-10 h-10 rounded-md flex items-center justify-center font-mono text-sm transition-all ";
+                  let blockClass = "w-5 h-5 sm:w-7 sm:h-7 md:w-10 md:h-10 rounded-[4px] sm:rounded-md flex items-center justify-center font-mono text-[9px] sm:text-xs md:text-sm transition-all ";
                   
                   if (isBeyond) {
                     blockClass += "border border-dashed border-gray-300 text-transparent";

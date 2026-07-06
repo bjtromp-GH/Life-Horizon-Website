@@ -111,7 +111,7 @@ export default function StatsCalculator() {
   };
 
   return (
-    <div id="calculator-section" className="w-full max-w-3xl mx-auto bg-white border border-[#E9E4E2] rounded-3xl shadow-xl overflow-hidden">
+    <div id="calculator-section" className="w-full max-w-4xl mx-auto bg-white border border-[#E9E4E2] rounded-3xl shadow-xl overflow-hidden">
       {/* Header Info */}
       <div className="bg-brand-orange px-6 py-4 border-b border-white/10 flex items-center justify-between">
         <div className="flex items-center gap-2">
