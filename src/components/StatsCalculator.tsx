@@ -596,10 +596,10 @@ export default function StatsCalculator() {
                       Nieuw in de App
                     </div>
                     <h4 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                      Ontdek jouw AI Levensmatrix Analyse
+                      Ontdek jouw Ai Levensmatrix Analyse
                     </h4>
                     <p className="text-sm text-gray-400 leading-relaxed">
-                      Dit is slechts een basisberekening. Laat onze geavanceerde AI jouw matrix analyseren op basis van genetica en diepgaande leefstijlfactoren voor een hyperpersoonlijk actieplan.
+                      Dit is slechts een basisberekening. Laat onze geavanceerde Ai jouw matrix analyseren op basis van genetica en diepgaande leefstijlfactoren voor een hyperpersoonlijk actieplan.
                     </p>
                   </div>
                   
@@ -609,7 +609,7 @@ export default function StatsCalculator() {
                     rel="noopener noreferrer"
                     className="shrink-0 w-full md:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-sm border border-white/10"
                   >
-                    Probeer de AI Analyse
+                    Probeer de Ai Analyse
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
