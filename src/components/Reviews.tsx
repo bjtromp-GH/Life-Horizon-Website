@@ -3,21 +3,21 @@ import { Star } from 'lucide-react';
 
 const reviews = [
   {
-    quote: "Dit gaf me écht het zetje om minder te gaan overwerken en vaker met mijn kinderen te zijn. Hard confronterend, maar precies wat ik nodig had.",
-    author: "Anonieme Gebruiker",
-    role: "Vader van 2",
+    quote: "Het leven is kort. De Life Horizon app heeft mij echt inzicht gegeven zodat ik de juiste keuzes kan maken voordat het te laat is.",
+    author: "Jan-Willem (42)",
+    role: "Gebruiker",
     rating: 5
   },
   {
-    quote: "Ik dacht altijd dat ik 'nog zeeën van tijd' had voor mijn droomreis. Life Horizon liet me zien hoe snel die tijd in de realiteit op is. Eye-opener!",
-    author: "Anonieme Gebruiker",
-    role: "Ondernemer",
+    quote: "Wow, dit is echt een nuttige app. Serieus, maar heel gaaf en interessant om inzicht te krijgen in je levensloop.",
+    author: "Mark (50)",
+    role: "Gebruiker",
     rating: 5
   },
   {
-    quote: "De levensmatrix is simpelweg briljant. Je ziet je hele leven in één oogopslag. Het heeft mijn perspectief op 'druk zijn' volledig veranderd.",
-    author: "Anonieme Gebruiker",
-    role: "Manager",
+    quote: "Door het CBS model en mijn eigen leefstijlfactoren te combineren heb ik een veel beter beeld van mijn toekomst. Ik ben direct actiever gaan sporten.",
+    author: "Sophie (35)",
+    role: "Gebruiker",
     rating: 5
   }
 ];
