@@ -27,12 +27,18 @@ export default function MascotIllustration({ delay = 0 }: { delay?: number }) {
         whileTap={{ scale: 0.95, rotate: -3 }}
         // Removed audio on click as requested, keeping just the tap animation
       >
-        <img 
-          src="/IMG/olifant-bril.webp" 
-          alt="Life Horizon Wijze Olifant" 
-          referrerPolicy="no-referrer"
-          className="w-full h-full object-contain select-none"
-        />
+        <motion.div
+          animate={{ y: [0, -10, 0] }}
+          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          className="w-full h-full"
+        >
+          <img 
+            src="/IMG/olifant-bril.webp" 
+            alt="Life Horizon Wijze Olifant" 
+            referrerPolicy="no-referrer"
+            className="w-full h-full object-contain select-none"
+          />
+        </motion.div>
       </motion.div>
     </div>
   );
