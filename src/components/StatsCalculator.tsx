@@ -585,11 +585,34 @@ export default function StatsCalculator() {
                 </div>
               </div>
 
-              {/* Disclaimer */}
-              <div className="bg-[#FAFAFA] border border-[#EAEAEA] rounded-xl p-4 text-center mt-2">
-                <p className="text-sm text-[#767676] leading-relaxed">
-                  <strong className="text-brand-dark">Let op:</strong> Dit is slechts een basisberekening. In de volledige Life Horizon app vind je veel meer diepgaande inzichten, genetica factoren, gepersonaliseerde grafieken en tools om je levensfasen te optimaliseren!
-                </p>
+              {/* AI Matrix Promo / Upsell */}
+              <div className="bg-gradient-to-br from-brand-dark to-[#1A1A1A] border border-brand-orange/20 rounded-2xl p-6 sm:p-8 text-left mt-6 relative overflow-hidden shadow-xl">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+                
+                <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                  <div className="space-y-2 max-w-xl">
+                    <div className="inline-flex items-center gap-1.5 bg-brand-orange/20 px-2.5 py-1 rounded-md text-[10px] font-mono font-bold text-brand-orange uppercase tracking-wider mb-1">
+                      <Brain className="w-3.5 h-3.5" />
+                      Nieuw in de App
+                    </div>
+                    <h4 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                      Ontdek jouw AI Levensmatrix Analyse
+                    </h4>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      Dit is slechts een basisberekening. Laat onze geavanceerde AI jouw matrix analyseren op basis van genetica en diepgaande leefstijlfactoren voor een hyperpersoonlijk actieplan.
+                    </p>
+                  </div>
+                  
+                  <a
+                    href="https://life-horizon.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 w-full md:w-auto bg-brand-orange hover:bg-brand-orange-hover text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-sm border border-white/10"
+                  >
+                    Probeer de AI Analyse
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
 
               {/* Reset action and CTA */}
