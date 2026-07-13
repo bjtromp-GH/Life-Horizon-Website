@@ -36,7 +36,7 @@ export default function Philosophy() {
             <div className="bg-[#FAF3F0] border border-brand-orange/15 p-5 rounded-2xl flex items-center gap-4 shadow-sm relative overflow-hidden">
               <div className="w-20 h-20 shrink-0 rounded-full overflow-hidden border-2 border-white bg-brand-orange shadow-xs">
                 <img 
-                  src="/IMG/LR_Olifant_v2.png" 
+                  src="/IMG/LR_Olifant_v2.webp" 
                   alt="De Wijze Olifant Thumbs Up" 
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover select-none"
@@ -119,7 +119,7 @@ export default function Philosophy() {
       {/* Mascot overlaid on horizon */}
       <div className="absolute bottom-0 right-4 sm:right-8 md:right-16 lg:right-32 xl:right-48 z-10 w-40 sm:w-48 lg:w-64 pointer-events-none origin-bottom translate-y-2">
         <img 
-          src="/IMG/LR_Olifant_v2.png" 
+          src="/IMG/LR_Olifant_v2.webp" 
           alt="Wijze Olifant" 
           className="w-full h-auto drop-shadow-2xl"
         />

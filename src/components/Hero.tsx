@@ -86,7 +86,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Life Horizon berekent jouw persoonlijke levensverwachting en laat zien hoe je de tijd verdeelt tussen werken, leven en pure vrijheid. Pak de controle terug over jouw tijd.
+                Krijg direct een voorproefje van jouw levensloop via deze interactieve web-calculator. De <strong>volledige, diepgaande ervaring</strong> om de controle over jouw tijd en gewoonten terug te pakken, vind je exclusief in de Life Horizon app.
               </motion.p>
             </div>
 

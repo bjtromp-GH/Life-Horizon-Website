@@ -27,7 +27,7 @@ export default function Footer() {
           </h2>
 
           <p className="text-sm sm:text-base text-gray-400 max-w-xl mx-auto leading-relaxed">
-            Wil je jouw levensbalk in meer detail analyseren? Begin vandaag met meten en ontdek de echte waarde van jouw jaren.
+            Wil je jouw levensbalk in veel meer detail analyseren? Begin vandaag met meten en ontdek de echte, gepersonaliseerde waarde van jouw jaren in de officiële Life Horizon app.
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">

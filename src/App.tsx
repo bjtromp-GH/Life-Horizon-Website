@@ -7,6 +7,7 @@ import Features from './components/Features';
 import Philosophy from './components/Philosophy';
 import Footer from './components/Footer';
 import TrustBadges from './components/TrustBadges';
+import Reviews from './components/Reviews';
 
 export default function App() {
   return (
@@ -50,7 +51,7 @@ export default function App() {
       {/* Top App Download Banner */}
       <div className="bg-[#1C1C1C] text-white px-4 py-4 sm:py-3 text-center flex flex-col sm:flex-row items-center justify-center gap-3 relative z-40 shadow-sm border-b border-black/20">
         <span className="text-xs sm:text-sm font-medium text-gray-200">
-          Life Horizon is nu beschikbaar voor Android!
+          De volledige Life Horizon ervaring is nu exclusief beschikbaar voor Android!
         </span>
         <a
           href="https://life-horizon.vercel.app/"
@@ -91,6 +92,9 @@ export default function App() {
 
         {/* 2b. Trust badges marquee row */}
         <TrustBadges />
+
+        {/* 2c. Social Proof / Reviews */}
+        <Reviews />
 
         {/* 3. Features Bento Grid */}
         <div id="features-section">

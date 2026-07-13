@@ -28,7 +28,7 @@ export default function MascotIllustration({ delay = 0 }: { delay?: number }) {
         // Removed audio on click as requested, keeping just the tap animation
       >
         <img 
-          src="/IMG/olifant-bril.png" 
+          src="/IMG/olifant-bril.webp" 
           alt="Life Horizon Wijze Olifant" 
           referrerPolicy="no-referrer"
           className="w-full h-full object-contain select-none"
