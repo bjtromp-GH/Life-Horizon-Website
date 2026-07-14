@@ -17,28 +17,94 @@ export default function Features() {
       icon: <Eye className="w-6 h-6 text-brand-orange" />,
       title: "De Confrontatie",
       desc: "Zie direct welk percentage van je verwachte leven je al hebt 'verbruikt', en hoeveel procent je nog hebt. Confronterend, maar uiterst verhelderend.",
-      badge: "Inzicht"
+      badge: "Inzicht",
+      visual: (
+        <div className="mt-6 pt-6 border-t border-gray-100">
+          <div className="flex justify-between text-[10px] font-mono text-gray-400 mb-2 font-bold uppercase tracking-wider">
+            <span>Verbruikt (38%)</span>
+            <span>Resterend (62%)</span>
+          </div>
+          <div className="h-2.5 w-full bg-[#EAEAEA] rounded-full overflow-hidden flex">
+            <motion.div 
+              className="h-full bg-brand-orange"
+              initial={{ width: 0 }}
+              whileInView={{ width: '38%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
+            />
+          </div>
+        </div>
+      )
     },
     {
       icon: <Dna className="w-6 h-6 text-brand-orange" />,
       title: "De Genetische Factor",
       desc: "Onze slimme algoritmes houden rekening met je genetische aanleg op basis van de levensduur van je biologische ouders en CBS-cohortprognoses.",
-      badge: "Wetenschappelijk"
+      badge: "Wetenschappelijk",
+      visual: (
+        <div className="mt-6 pt-6 border-t border-gray-100 flex items-center justify-center gap-2">
+          {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+            <motion.div
+              key={i}
+              className={`rounded-full ${i % 2 === 0 ? 'bg-brand-orange' : 'bg-brand-peach'}`}
+              style={{ width: i % 2 === 0 ? '8px' : '6px', height: i % 2 === 0 ? '8px' : '6px' }}
+              initial={{ opacity: 0.2, y: 0 }}
+              animate={{ opacity: [0.2, 1, 0.2], y: [0, -4, 0] }}
+              transition={{ duration: 2, repeat: Infinity, delay: i * 0.15 }}
+            />
+          ))}
+        </div>
+      )
     },
     {
       icon: <Compass className="w-6 h-6 text-brand-orange" />,
       title: "Het 25 / 50 / 25 Model",
       desc: "Leer hoe een optimaal leven is opgebouwd volgens Seneca: 25% jeugd en groei, 50% werk en opbouw, en 25% pure, onvoorwaardelijke vrijheid.",
-      badge: "Filosofie"
+      badge: "Filosofie",
+      visual: (
+        <div className="mt-6 pt-6 border-t border-gray-100">
+          <div className="flex gap-1 h-2.5 w-full rounded-full overflow-hidden">
+            <motion.div className="h-full bg-brand-peach" initial={{ width: 0 }} whileInView={{ width: '25%' }} viewport={{ once: true }} transition={{ duration: 1 }} />
+            <motion.div className="h-full bg-brand-orange" initial={{ width: 0 }} whileInView={{ width: '50%' }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.2 }} />
+            <motion.div className="h-full bg-brand-sage" initial={{ width: 0 }} whileInView={{ width: '25%' }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.4 }} />
+          </div>
+          <div className="flex justify-between mt-2 text-[9px] font-mono font-bold text-gray-400 uppercase tracking-widest">
+            <span className="w-1/4 text-left">Jeugd</span>
+            <span className="w-2/4 text-center">Werk</span>
+            <span className="w-1/4 text-right">Vrijheid</span>
+          </div>
+        </div>
+      )
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-brand-orange" />,
       title: "Privacy First",
       desc: "Jouw levensgegevens zijn van jou. Alles wordt lokaal in je browser berekend. Geen accounts, geen trackers, geen verkoop aan verzekeraars.",
-      badge: "Veilig"
+      badge: "Veilig",
+      visual: (
+        <div className="mt-6 pt-6 border-t border-gray-100 flex items-center justify-between">
+          <div className="flex gap-1.5 opacity-50">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="w-6 h-1.5 rounded-full bg-gray-200" />
+            ))}
+          </div>
+          <motion.div 
+            className="bg-brand-sage/10 p-2 rounded-xl border border-brand-sage/20 shadow-sm"
+            whileHover={{ scale: 1.1 }}
+            animate={{ y: [0, -3, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ShieldCheck className="w-5 h-5 text-brand-sage" />
+          </motion.div>
+          <div className="flex gap-1.5 opacity-50">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="w-6 h-1.5 rounded-full bg-gray-200" />
+            ))}
+          </div>
+        </div>
+      )
     }
   ];
-
 
   return (
     <section className="py-24 bg-gradient-to-br from-[#E25C26] via-[#D56B45] to-[#B84E29] text-white relative overflow-hidden">
@@ -103,6 +169,9 @@ export default function Features() {
                 <p className="text-sm text-[#767676] leading-relaxed">
                   {item.desc}
                 </p>
+
+                {/* The new visual mini-infographic */}
+                {item.visual}
               </div>
 
               {/* Decorative dynamic indicator */}
