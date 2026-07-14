@@ -15,44 +15,46 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#FAFAFA] font-sans antialiased text-[#2D2D2D]">
       {/* Sticky Translucent Header */}
-      <header className="sticky top-0 z-50 bg-brand-orange/95 backdrop-blur-md border-b border-white/10 text-white">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo Brand */}
-          <div className="flex items-center gap-2">
-            <Compass className="w-6 h-6 text-white" />
-            <span className="font-black text-white tracking-tight text-lg">
-              Life <span className="opacity-90">Horizon</span>
-            </span>
-          </div>
+      <header className="sticky top-0 z-50 flex flex-col">
+        <div className="bg-brand-orange/95 backdrop-blur-md border-b border-black/20 text-white relative z-10">
+          <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            {/* Logo Brand */}
+            <div className="flex items-center gap-2">
+              <Compass className="w-6 h-6 text-white" />
+              <span className="font-black text-white tracking-tight text-lg">
+                Life <span className="opacity-90">Horizon</span>
+              </span>
+            </div>
 
-          {/* Navigation Links */}
-          <nav className="hidden sm:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-white/80">
-            <a href="#calculator-section" className="hover:text-white transition">
-              Rekenmodel
-            </a>
-            <a href="#features-section" className="hover:text-white transition">
-              Mogelijkheden
-            </a>
-            <a href="#philosophy-section" className="hover:text-white transition text-xs">
-              Onze Visie
-            </a>
-          </nav>
+            {/* Navigation Links */}
+            <nav className="hidden sm:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-white/80">
+              <a href="#calculator-section" className="hover:text-white transition">
+                Rekenmodel
+              </a>
+              <a href="#features-section" className="hover:text-white transition">
+                Mogelijkheden
+              </a>
+              <a href="#philosophy-section" className="hover:text-white transition text-xs">
+                Onze Visie
+              </a>
+            </nav>
 
-          {/* Action Button & Info */}
-          <div className="flex items-center gap-2 sm:gap-4">
-            <button 
-              onClick={() => setShowInfoPanel(!showInfoPanel)}
-              className={`p-2 rounded-full transition-colors ${showInfoPanel ? 'bg-white/20' : 'hover:bg-white/10'}`}
-              aria-label="Meer informatie"
-            >
-              <Info className="w-5 h-5 text-white" />
-            </button>
-            <a
-              href="#calculator-section"
-              className="bg-white hover:bg-[#FAF3F0] text-brand-orange text-xs font-bold uppercase tracking-wider px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition shadow-xs hover:shadow-md cursor-pointer"
-            >
-              Bereken Nu
-            </a>
+            {/* Action Button & Info */}
+            <div className="flex items-center gap-2 sm:gap-4">
+              <button 
+                onClick={() => setShowInfoPanel(!showInfoPanel)}
+                className={`p-2 rounded-full transition-colors ${showInfoPanel ? 'bg-white/20' : 'hover:bg-white/10'}`}
+                aria-label="Meer informatie"
+              >
+                <Info className="w-5 h-5 text-white" />
+              </button>
+              <a
+                href="#calculator-section"
+                className="bg-white hover:bg-[#FAF3F0] text-brand-orange text-xs font-bold uppercase tracking-wider px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition shadow-xs hover:shadow-md cursor-pointer"
+              >
+                Bereken Nu
+              </a>
+            </div>
           </div>
         </div>
 
@@ -63,7 +65,7 @@ export default function App() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="bg-[#1C1C1C] overflow-hidden border-b border-white/5"
+              className="bg-[#1C1C1C] overflow-hidden border-b border-black relative z-0 shadow-lg"
             >
               <div className="max-w-6xl mx-auto px-6 py-4 text-xs sm:text-sm text-gray-300 leading-relaxed">
                 [Hier komt nog een extra tekst of uitleg...]
