@@ -24,8 +24,32 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="py-20 bg-[#FAF9F8]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-20 bg-[#FAF9F8] relative overflow-hidden">
+      {/* Background image (Mobile) */}
+      <div 
+        className="absolute top-0 left-0 w-full h-full lg:hidden z-0 pointer-events-none opacity-80"
+        style={{ 
+          backgroundImage: "url('/IMG/lifehorizon-calculation-bg.webp')", 
+          backgroundSize: "cover", 
+          backgroundPosition: "center",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 0%, transparent 100%)"
+        }} 
+      />
+
+      {/* Background image (Desktop) - Softer & customized fade */}
+      <div 
+        className="hidden lg:block absolute top-0 left-0 w-full h-full z-0 pointer-events-none opacity-30"
+        style={{ 
+          backgroundImage: "url('/IMG/lifehorizon-calculation-bg.webp')", 
+          backgroundSize: "cover", 
+          backgroundPosition: "center",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 65%)",
+          maskImage: "linear-gradient(to bottom, black 0%, transparent 65%)"
+        }} 
+      />
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
           <motion.div 
             className="inline-flex items-center gap-1.5 bg-brand-sage/10 border border-brand-sage/20 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-brand-sage uppercase tracking-wider mb-4"
