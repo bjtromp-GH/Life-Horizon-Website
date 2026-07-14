@@ -19,12 +19,15 @@ export default function App() {
         <div className="bg-brand-orange/95 backdrop-blur-md border-b border-black/20 text-white relative z-10">
           <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             {/* Logo Brand */}
-            <div className="flex items-center gap-2">
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity focus:outline-none cursor-pointer"
+            >
               <Compass className="w-6 h-6 text-white" />
               <span className="font-black text-white tracking-tight text-lg">
                 Life <span className="opacity-90">Horizon</span>
               </span>
-            </div>
+            </button>
 
             {/* Navigation Links */}
             <nav className="hidden sm:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-white/80">
