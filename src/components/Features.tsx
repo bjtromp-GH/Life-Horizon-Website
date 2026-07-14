@@ -174,8 +174,6 @@ export default function Features() {
                 {item.visual}
               </div>
 
-              {/* Decorative dynamic indicator */}
-              <div className="w-12 h-1 bg-brand-orange/20 rounded-full mt-6 group-hover:w-24 group-hover:bg-brand-orange transition-all duration-300" />
             </motion.div>
           ))}
         </div>
