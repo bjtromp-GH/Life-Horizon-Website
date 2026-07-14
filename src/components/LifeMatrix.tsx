@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { motion } from 'motion/react';
 
 interface LifeMatrixProps {
@@ -8,7 +8,7 @@ interface LifeMatrixProps {
   lifeExpectancy: number;
 }
 
-export default function LifeMatrix({ age, youthYears, aowAge, lifeExpectancy }: LifeMatrixProps) {
+const LifeMatrix = memo(function LifeMatrix({ age, youthYears, aowAge, lifeExpectancy }: LifeMatrixProps) {
   // Determine how many decades to show. Show at least up to life expectancy.
   // Standard is 90 years (9 rows) or 100 years (10 rows).
   const totalYears = Math.max(100, Math.ceil((lifeExpectancy + 1) / 10) * 10);
@@ -105,4 +105,6 @@ export default function LifeMatrix({ age, youthYears, aowAge, lifeExpectancy }: 
       </div>
     </div>
   );
-}
+});
+
+export default LifeMatrix;

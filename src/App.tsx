@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Compass, Heart, Info, ArrowRight } from 'lucide-react';
 import Hero from './components/Hero';
 import StatsCalculator from './components/StatsCalculator';
 import Features from './components/Features';
-import Philosophy from './components/Philosophy';
-import Footer from './components/Footer';
-import TrustBadges from './components/TrustBadges';
-import Reviews from './components/Reviews';
+
+// Lazy loaded components (below the fold)
+const Philosophy = lazy(() => import('./components/Philosophy'));
+const Footer = lazy(() => import('./components/Footer'));
+const TrustBadges = lazy(() => import('./components/TrustBadges'));
+const Reviews = lazy(() => import('./components/Reviews'));
 
 export default function App() {
   const [showInfoPanel, setShowInfoPanel] = useState(false);
@@ -169,15 +171,22 @@ export default function App() {
           <Features />
         </div>
 
-        {/* 4. Philosophy & Quote Section */}
-        <div id="philosophy-section">
-          <Philosophy />
-        </div>
-      </main>
+        <Suspense fallback={<div className="h-40 flex items-center justify-center text-gray-400">Loading...</div>}>
+          {/* 4. Philosophy & Quote Section */}
+          <div id="philosophy-section">
+            <Philosophy />
+          </div>
 
-      {/* 5. Footer & Call to action */}
-      <Footer />
+          {/* 2b. Trust badges marquee row */}
+          <TrustBadges />
+
+          {/* 2c. Social Proof / Reviews */}
+          <Reviews />
+
+          {/* 5. Footer & Call to action */}
+          <Footer />
+        </Suspense>
+      </main>
     </div>
   );
 }
-
