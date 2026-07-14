@@ -54,9 +54,21 @@ export default function Hero() {
         }} 
       />
 
+      {/* New Top Background fading to white */}
+      <div 
+        className="absolute top-0 left-0 w-full h-[400px] sm:h-[500px] lg:h-[700px] z-0 pointer-events-none opacity-80"
+        style={{ 
+          backgroundImage: "url('/IMG/lifehorizon-calculation-bg.webp')", 
+          backgroundSize: "cover", 
+          backgroundPosition: "top center",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 0%, transparent 100%)"
+        }} 
+      />
+
       {/* Soft background gradients for top corners to break up the white space */}
-      <div className="absolute top-0 left-0 w-72 h-72 md:w-96 md:h-96 bg-[#D56B45]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-      <div className="absolute top-10 right-0 w-80 h-80 md:w-[32rem] md:h-[32rem] bg-[#86A789]/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-72 h-72 md:w-96 md:h-96 bg-[#D56B45]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0" />
+      <div className="absolute top-10 right-0 w-80 h-80 md:w-[32rem] md:h-[32rem] bg-[#86A789]/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4 pointer-events-none z-0" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-10 lg:gap-8 items-center">
