@@ -153,10 +153,10 @@ export default function App() {
 
 
         {/* 3. Features Bento Grid */}
-        <div id="features-section" className="relative mt-8 sm:mt-0">
+        <div id="features-section" className="relative mt-28 sm:mt-0">
           {/* Mobile Coach Elephant sitting on top of the orange section */}
           <motion.div 
-            className="absolute top-0 right-8 w-32 z-20 pointer-events-none sm:hidden -translate-y-full"
+            className="absolute top-0 right-8 w-28 z-20 pointer-events-none sm:hidden -translate-y-[95%]"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
