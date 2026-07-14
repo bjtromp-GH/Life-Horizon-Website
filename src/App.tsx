@@ -82,7 +82,8 @@ export default function App() {
             </motion.div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark tracking-tight leading-tight max-w-[95%] mx-auto">
               Je weet hoeveel geld je hebt.<br />
-              Waarom weet je niet hoeveel tijd je waarschijnlijk nog hebt?
+              Waarom weet je niet hoeveel tijd je <br className="hidden sm:block" />
+              waarschijnlijk nog hebt?
             </h2>
             <p className="text-[#767676] max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
               Ontdek in twee minuten hoe jouw verwachte levensjaren verdeeld zijn en krijg een nieuw perspectief op werk, gezondheid en vrijheid.
