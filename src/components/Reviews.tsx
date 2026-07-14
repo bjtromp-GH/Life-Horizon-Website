@@ -27,7 +27,7 @@ export default function Reviews() {
     <section className="py-20 bg-[#FAF9F8] relative overflow-hidden">
       {/* Background image (Mobile) */}
       <div 
-        className="absolute top-0 left-0 w-full h-full lg:hidden z-0 pointer-events-none opacity-80"
+        className="absolute top-0 left-0 w-full h-full lg:hidden z-0 pointer-events-none opacity-30"
         style={{ 
           backgroundImage: "url('/IMG/lifehorizon-calculation-bg.webp')", 
           backgroundSize: "cover", 
