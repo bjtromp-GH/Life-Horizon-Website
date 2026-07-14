@@ -601,7 +601,7 @@ export default function StatsCalculator() {
                 <div className="bg-gradient-to-br from-brand-dark to-[#1A1A1A] border border-brand-orange/20 rounded-2xl p-5 sm:p-8 text-left relative overflow-hidden shadow-2xl">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
                   
-                  <div className="relative z-10 flex flex-col items-start gap-4 pr-24 sm:pr-32 md:pr-44 lg:pr-52">
+                  <div className="relative z-10 flex flex-col items-start gap-4 sm:pr-32 md:pr-44 lg:pr-52">
                     <div className="space-y-2">
                       <div className="inline-flex items-center gap-1.5 bg-brand-orange/20 px-2.5 py-1 rounded-md text-[10px] font-mono font-bold text-brand-orange uppercase tracking-wider mb-1">
                         <Brain className="w-3.5 h-3.5" />
@@ -610,7 +610,7 @@ export default function StatsCalculator() {
                       <h4 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                         Ontdek jouw Ai Levensmatrix Analyse
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-lg">
+                      <p className="text-sm text-gray-400 leading-relaxed max-w-lg">
                         Dit is slechts een basisberekening. Laat onze geavanceerde Ai jouw matrix analyseren op basis van genetica en diepgaande leefstijlfactoren voor een hyperpersoonlijk actieplan.
                       </p>
                     </div>
@@ -619,7 +619,7 @@ export default function StatsCalculator() {
                       href="https://life-horizon.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="shrink-0 w-fit bg-brand-orange hover:bg-brand-orange-hover text-white text-xs font-bold uppercase tracking-wider px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-sm border border-white/10 mt-2"
+                      className="shrink-0 w-full sm:w-fit bg-brand-orange hover:bg-brand-orange-hover text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-sm border border-white/10 mt-2"
                     >
                       Probeer de Ai Analyse
                       <ArrowRight className="w-4 h-4" />
