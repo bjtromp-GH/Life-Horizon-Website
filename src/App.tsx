@@ -80,11 +80,12 @@ export default function App() {
               <span className="w-1.5 h-1.5 rounded-full bg-current" />
               Interactieve Calculator
             </motion.div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
-              Test jouw Levenshorizon direct uit
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tight leading-tight">
+              Je weet hoeveel geld je hebt.<br className="hidden sm:block" />
+              Waarom weet je niet hoeveel tijd je waarschijnlijk nog hebt?
             </h2>
-            <p className="text-[#767676] max-w-lg mx-auto text-sm">
-              Met onze mini-versie van de Life Horizon calculator zie je meteen waar je vandaag staat en hoe je verhoudingen liggen.
+            <p className="text-[#767676] max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+              Ontdek in twee minuten hoe jouw verwachte levensjaren verdeeld zijn en krijg een nieuw perspectief op werk, gezondheid en vrijheid.
             </p>
           </div>
           <StatsCalculator />
