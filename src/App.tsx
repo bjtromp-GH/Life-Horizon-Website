@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Compass, Heart, Info } from 'lucide-react';
+import { Compass, Heart, Info, ArrowRight } from 'lucide-react';
 import Hero from './components/Hero';
 import StatsCalculator from './components/StatsCalculator';
 import Features from './components/Features';
@@ -68,8 +68,22 @@ export default function App() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="bg-[#1C1C1C] overflow-hidden border-b border-black relative z-0 shadow-lg"
             >
-              <div className="max-w-6xl mx-auto px-6 py-4 text-xs sm:text-sm text-gray-300 leading-relaxed">
-                [Hier komt nog een extra tekst of uitleg...]
+              <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+                <div className="max-w-2xl space-y-1.5">
+                  <h4 className="text-white font-bold tracking-tight text-sm sm:text-base">Jouw tijd is nu.</h4>
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                    Life Horizon is gebouwd met één missie: jou inzicht geven in je meest waardevolle bezit. Het is geen tool om je bang te maken, maar een kompas om je te helpen keuzes te maken die er écht toe doen.
+                  </p>
+                </div>
+                <a
+                  href="https://life-horizon.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 bg-white/10 hover:bg-white/20 border border-white/10 text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition flex items-center gap-2"
+                >
+                  Ontdek de volledige app
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </motion.div>
           )}
