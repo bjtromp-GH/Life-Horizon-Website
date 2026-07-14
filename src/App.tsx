@@ -69,28 +69,32 @@ export default function App() {
               className="bg-[#1C1C1C] overflow-hidden border-b border-black relative z-0 shadow-lg"
             >
               <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                {/* Text Section */}
+                <div className="max-w-2xl space-y-1.5 flex-grow">
+                  <h4 className="text-white font-bold tracking-tight text-sm sm:text-base">Jouw tijd is nu.</h4>
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                    Life Horizon is gebouwd met één missie: jou inzicht geven in je meest waardevolle bezit. Het is geen tool om je bang te maken, maar een kompas om je te helpen keuzes te maken die er écht toe doen.
+                  </p>
+                </div>
+                
+                {/* Action & Image Section */}
+                <div className="flex flex-row md:flex-row-reverse items-center justify-between md:justify-end gap-4 md:gap-8 w-full md:w-auto">
+                  <a
+                    href="https://life-horizon.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 bg-white/10 hover:bg-white/20 border border-white/10 text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-xl transition flex items-center gap-2"
+                  >
+                    Ontdek de volledige app
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                  
                   <img 
                     src="/IMG/olifant-bril.webp" 
                     alt="Wise Elephant" 
-                    className="w-16 sm:w-20 md:w-24 h-auto object-contain shrink-0 drop-shadow-md transform -scale-x-100" 
+                    className="w-14 sm:w-16 md:w-20 h-auto object-contain shrink-0 drop-shadow-md transform -scale-x-100" 
                   />
-                  <div className="max-w-2xl space-y-1.5">
-                    <h4 className="text-white font-bold tracking-tight text-sm sm:text-base">Jouw tijd is nu.</h4>
-                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
-                      Life Horizon is gebouwd met één missie: jou inzicht geven in je meest waardevolle bezit. Het is geen tool om je bang te maken, maar een kompas om je te helpen keuzes te maken die er écht toe doen.
-                    </p>
-                  </div>
                 </div>
-                <a
-                  href="https://life-horizon.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0 bg-white/10 hover:bg-white/20 border border-white/10 text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl transition flex items-center gap-2"
-                >
-                  Ontdek de volledige app
-                  <ArrowRight className="w-4 h-4" />
-                </a>
               </div>
             </motion.div>
           )}
