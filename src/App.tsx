@@ -150,11 +150,7 @@ export default function App() {
           <StatsCalculator />
         </section>
 
-        {/* 2b. Trust badges marquee row */}
-        <TrustBadges />
 
-        {/* 2c. Social Proof / Reviews */}
-        <Reviews />
 
         {/* 3. Features Bento Grid */}
         <div id="features-section" className="relative mt-8 sm:mt-0">
