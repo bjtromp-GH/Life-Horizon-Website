@@ -62,9 +62,10 @@ export default function App() {
         <AnimatePresence>
           {showInfoPanel && (
             <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
+              initial={{ height: 0 }}
+              animate={{ height: "auto" }}
+              exit={{ height: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               className="bg-[#1C1C1C] overflow-hidden border-b border-black relative z-0 shadow-lg"
             >
               <div className="max-w-6xl mx-auto px-6 py-4 text-xs sm:text-sm text-gray-300 leading-relaxed">
