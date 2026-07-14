@@ -127,7 +127,7 @@ export default function App() {
         <Hero />
 
         {/* 2. Interactive Calculator Section */}
-        <section id="calculator-section" className="pt-16 md:pt-20 pb-24 bg-white px-6">
+        <section id="calculator-section" className="pt-16 md:pt-20 pb-44 sm:pb-24 bg-white px-6">
           <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
             <motion.div 
               className="inline-flex items-center gap-1.5 bg-brand-peach border border-brand-orange/20 px-3 py-1 rounded-full text-xs font-mono font-bold text-brand-orange uppercase tracking-wider"
@@ -150,10 +150,8 @@ export default function App() {
           <StatsCalculator />
         </section>
 
-
-
         {/* 3. Features Bento Grid */}
-        <div id="features-section" className="relative mt-28 sm:mt-0">
+        <div id="features-section" className="relative mt-0">
           {/* Mobile Coach Elephant sitting on top of the orange section */}
           <motion.div 
             className="absolute top-0 right-8 w-28 z-20 pointer-events-none sm:hidden -translate-y-full"
