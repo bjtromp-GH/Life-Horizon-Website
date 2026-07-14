@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { Compass, Heart } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Compass, Heart, Info } from 'lucide-react';
 import Hero from './components/Hero';
 import StatsCalculator from './components/StatsCalculator';
 import Features from './components/Features';
@@ -10,6 +10,8 @@ import TrustBadges from './components/TrustBadges';
 import Reviews from './components/Reviews';
 
 export default function App() {
+  const [showInfoPanel, setShowInfoPanel] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#FAFAFA] font-sans antialiased text-[#2D2D2D]">
       {/* Sticky Translucent Header */}
@@ -36,16 +38,39 @@ export default function App() {
             </a>
           </nav>
 
-          {/* Action Button */}
-          <div>
+          {/* Action Button & Info */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            <button 
+              onClick={() => setShowInfoPanel(!showInfoPanel)}
+              className={`p-2 rounded-full transition-colors ${showInfoPanel ? 'bg-white/20' : 'hover:bg-white/10'}`}
+              aria-label="Meer informatie"
+            >
+              <Info className="w-5 h-5 text-white" />
+            </button>
             <a
               href="#calculator-section"
-              className="bg-white hover:bg-[#FAF3F0] text-brand-orange text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg transition shadow-xs hover:shadow-md cursor-pointer"
+              className="bg-white hover:bg-[#FAF3F0] text-brand-orange text-xs font-bold uppercase tracking-wider px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition shadow-xs hover:shadow-md cursor-pointer"
             >
               Bereken Nu
             </a>
           </div>
         </div>
+
+        {/* Info Slide-down Panel */}
+        <AnimatePresence>
+          {showInfoPanel && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="bg-[#1C1C1C] overflow-hidden border-b border-white/5"
+            >
+              <div className="max-w-6xl mx-auto px-6 py-4 text-xs sm:text-sm text-gray-300 leading-relaxed">
+                [Hier komt nog een extra tekst of uitleg...]
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
 
       {/* Top App Download Banner */}
