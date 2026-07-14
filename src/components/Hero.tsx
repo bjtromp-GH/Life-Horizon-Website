@@ -54,15 +54,27 @@ export default function Hero() {
         }} 
       />
 
-      {/* New Top Background fading to white */}
+      {/* New Top Background fading to white (Mobile) */}
       <div 
-        className="absolute top-0 left-0 w-full h-[400px] sm:h-[500px] lg:h-[700px] z-0 pointer-events-none opacity-80"
+        className="absolute top-0 left-0 w-full h-[400px] sm:h-[500px] lg:hidden z-0 pointer-events-none opacity-80"
         style={{ 
           backgroundImage: "url('/IMG/lifehorizon-calculation-bg.webp')", 
           backgroundSize: "cover", 
           backgroundPosition: "top center",
           WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 100%)",
           maskImage: "linear-gradient(to bottom, black 0%, transparent 100%)"
+        }} 
+      />
+
+      {/* New Top Background fading to white (Desktop) - Softer & customized fade */}
+      <div 
+        className="hidden lg:block absolute top-0 left-0 w-full h-[650px] z-0 pointer-events-none opacity-30"
+        style={{ 
+          backgroundImage: "url('/IMG/lifehorizon-calculation-bg.webp')", 
+          backgroundSize: "cover", 
+          backgroundPosition: "top center",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 65%)",
+          maskImage: "linear-gradient(to bottom, black 0%, transparent 65%)"
         }} 
       />
 
