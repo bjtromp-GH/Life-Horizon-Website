@@ -80,8 +80,8 @@ export default function App() {
               <span className="w-1.5 h-1.5 rounded-full bg-current" />
               Interactieve Calculator
             </motion.div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-brand-dark tracking-tight leading-tight">
-              Je weet hoeveel geld je hebt.<br className="hidden sm:block" />
+            <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-brand-dark tracking-tight leading-tight max-w-[95%] mx-auto">
+              Je weet hoeveel geld je hebt.<br />
               Waarom weet je niet hoeveel tijd je waarschijnlijk nog hebt?
             </h2>
             <p className="text-[#767676] max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
