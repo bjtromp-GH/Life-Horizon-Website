@@ -81,20 +81,13 @@ export default function Footer() {
           </div>
 
           {/* Core concept column */}
-          <div className="md:col-span-4 space-y-4">
-            <div className="space-y-3">
-              <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">
-                Het Horizon Ecosysteem
-              </h4>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Trots lid van het eco-systeem met apps zoals <strong>Financiële Horizon</strong> en <strong>Life Horizon</strong>. Technische precisie ontmoet hoogwaardige esthetische standaarden.
-              </p>
-            </div>
-            <img 
-              src="/IMG/beste_app_badge.webp" 
-              alt="Beste App" 
-              className="w-20 h-auto opacity-70 hover:opacity-100 transition-opacity drop-shadow-md"
-            />
+          <div className="md:col-span-4 space-y-3">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">
+              Het Horizon Ecosysteem
+            </h4>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Trots lid van het eco-systeem met apps zoals <strong>Financiële Horizon</strong> en <strong>Life Horizon</strong>. Technische precisie ontmoet hoogwaardige esthetische standaarden.
+            </p>
           </div>
 
         </div>
