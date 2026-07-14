@@ -589,7 +589,7 @@ export default function StatsCalculator() {
               <div className="relative mt-12 sm:mt-16">
                 {/* The Coach Image */}
                 <motion.div 
-                  className="absolute bottom-0 right-2 sm:right-6 md:right-12 w-28 sm:w-36 md:w-40 lg:w-44 z-20 pointer-events-none origin-bottom"
+                  className="hidden sm:block absolute bottom-0 right-2 sm:right-6 md:right-12 w-28 sm:w-36 md:w-40 lg:w-44 z-20 pointer-events-none origin-bottom"
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}

@@ -99,7 +99,17 @@ export default function App() {
         <Reviews />
 
         {/* 3. Features Bento Grid */}
-        <div id="features-section">
+        <div id="features-section" className="relative mt-8 sm:mt-0">
+          {/* Mobile Coach Elephant sitting on top of the orange section */}
+          <motion.div 
+            className="absolute top-0 right-4 w-32 z-20 pointer-events-none sm:hidden translate-y-[-96%]"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
+          >
+            <img src="/IMG/olifant-polo.webp" alt="AI Coach" className="w-full h-auto drop-shadow-2xl" />
+          </motion.div>
           <Features />
         </div>
 
